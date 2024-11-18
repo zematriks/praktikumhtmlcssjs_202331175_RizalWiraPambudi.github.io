@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Praktikum</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+    reffererpolicy="no-referrer" />
+</head>
+
+<!--STYLE-->
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    html{
+        font-size: 10px;
+    }
+
+    li{
+        list-style:circle;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    h1{
+        font-size: 1.9rem;
+    }
+
+    h5{
+        font-size: 1.2rem;
+    }
+
+    p{
+        margin-top: 0px;
+        font-size: 1.2rem;
+    }
+
+    header{
+        width: 100%;
+        height: 5rem;
+        background-color: rgba(240, 248, 255, 0.164);
+        position: fixed;
+        top: 0;
+        z-index: 333;
+    }
+
+    main{
+        width: 100%;
+        max-width: 80rem;
+        background-color: white;
+        margin: 0 auto;
+        padding: 3rem;
+        border-radius: 1.5rem;
+        margin-top: -15rem;
+    }
+
+    main h2{
+        font-size: 3rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+
+    main .profile-container{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        margin:  3rem 0;
+        
+    }
+
+    main .profile-container .profile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    main .profile-container .profile .img-container{
+        width: 6rem;
+        height: 6rem;
+        background: url(avatar.jpg) no-repeat center center / cover;
+        border-radius: 0.5rem;
+    }
+
+    main .profile-container .profile .text{
+        margin: 0.1rem;
+        color: #5b5963;
+        font-size: 1.2 rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    .container{
+        width: 96%;
+        max-width: 117rem;
+        margin: 0 auto;
+    }
+
+    .navbar{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:0 1.5 rem;
+    }
+
+    .navbar h1{
+        text-transform: uppercase;
+        color: #5b5963;
+        font-weight: 600;
+        letter-spacing: 2px;
+        cursor: pointer;
+    }
+
+    .navbar ul{
+        display:flex;
+        justify-content: center;
+        align-items:center;
+    }
+
+    .navbar ul a{
+        font-size: 1.2rem;
+        padding: 1.5rem;
+        text-transform: uppercase;
+        color: #5b5963;
+        font-weight: 400;
+        letter-spacing: 2px;
+        transition: all 0.4s ease;
+    }
+
+    .hero{
+        max-width: 114rem;
+        height: 40res;
+        background: url(coding.jpg) 
+        no-repeat center center / cover;
+        margin: 5rem auto;
+    }
+
+    
+
+    .profile .text h3{
+        text-decoration: uppercase;
+    }
+
+    .btn{
+        display: inline-block;
+        text-transform: capitalize;
+        font-size: 1.2rem;
+        padding: 0.3rem 1.5rem;
+        background-color: #fd735a;
+        border-radius: 0.2rem;
+    }
+
+    main p{
+        color:#5b5963;
+        margin: 1rem 0;
+
+    }
+
+    main .content h4{
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #5b5963;
+        margin: 2em 0;
+    }
+
+    main .content .content-img-container{
+        width: 100%;
+        height: 35rem;
+        background: url(coding.jpg) no-repeat center center / cover;
+
+    }
+
+    blockquote{
+        font-size: 1.4rem;
+        padding: 1rem 2.8rem;
+        line-height: 1.6;
+        font-weight: 300;
+    }
+
+    .tags{
+        display: flex;
+        align-items: center;
+    }
+
+    .tags p{
+        font-size: 1.4rem;
+        text-transform: capitalize;
+    }
+
+    .tags a{
+        display: inline-block;
+        padding: 0.3rem 1.5rem;
+        background-color: #f5f5f5;
+        color: #5b5963;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        margin: 0 0.5rem;
+    }
+
+    .articles{
+        width: 100%;
+        background-color: #f5f5f5;
+        margin: 5rem 0;
+        padding: 5rem 0;
+    }
+
+    footer{
+        background-color: #222;
+        padding: 3rem 0;
+    }
+
+    .text p{
+        text-align:center;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        color: white;
+        margin: 2px 0;
+        font-size: 1.2rem;
+        color: grey;
+        transition: all 0.4s ease;
+    }
+    
+</style>
+
+
+<body>
+    <div class="container">
+        <div class ="hero">
+        </div>
+    </div>
+
+    <main>
+        <h2>Penjelasan HTML, CSS, dan JS</h2>
+        <div class="profile-container">
+            <div class="profile">
+                <div class="img-container">
+
+                </div>
+                <div>
+                    <h3 style="margin-left: 0.5em; font-size: 16pt;">Rizal Wira Pambudi</h3>
+                    <p style="margin-left: 1em; font-size: 10pt;margin-top: 0pt;">NIM : 202331175</p>
+                </div>
+            </div>
+            <div class="button">
+                <a href="#" class="btn">passion</a>
+            </div>
+        </div>
+        <div class="content">
+            
+            
+<h2>HTML</h2>
+<hr><br>
+<h3>HTML Basic Structure<h3>
+<p>HTML terdiri dari dua elemen , header dan body.
+untuk menambahkan elemen pada HTML adalah dengan menggunakan tags, tags menunjuk fungsinya secara spesifik. Tags harus mencakup start tag di depan content dan end tag dibelakang content.</p>
+
+<h4>Basic Elements<h4>
+<ul>
+<li> <h5> Headings <h5> </li>
+<p>Untuk headings yang tersedia adalah h1, yang merupakan heading yang paling penting atau paling besar, lalu ada h6 yang merupakan heading yang terkecil. Heading dapat diberi attribut khusus.</p>
+
+<li><h5> Paragraph <h5></li>
+<p>Paragraph ditandai dengan tag p. Paragraph tidak mendapatkan formatting khusus seperti heading, Hanya nampak seperti teks pada umumnya.</p>
+
+<li><h5> Links <h5></li>
+<p>Links atau bisa juga disebut hyperlink adalah element yang ketika diklik dapat mengarahkan kepada sebuah webpage atau page section. Tapi di HTML link dapat di buat menjadi teks sesuai keinginan. Saat di mode tampil, link ditandai dengan garis bawah dan umumnya warna teks biru atau ungu. Tag yang digunakan adalah a dengan atribut penunjuk href.</p>
+
+</ul>
+
+<h4> Note: </h4>
+<ul>
+    <li><b> Tags <b> adalah penanda yang diberikan khusus untuk membuat sebuah elemen, dan isinya adalah content. <br> <br></li> 
+    <li><b> Attributes<b> adalah atribut atau pengaturan tambahan yang dapat kita tambahkan kedalam tags untuk mengatur stylingnya, sehingga lebih unik</li>   
+</ul>
+
+<br><br>
+<h5>Styling Attribute</h5>
+<br>
+Kita dapat mengatur beberapa pengaturan styling dengan atribut "style", yang bisa memuat beberapa pengaturan diantara lain:
+<ul>
+    <li>Background Color</li>
+    <li>Text Color</li>
+    <li>Font</li>
+    <li>Text Size</li>
+    <li>dan lain lain</li>
+</ul>
+<br>
+<h5>Styling Tags</h5>
+<p>Kita dapat menambahkan tag pada teks yang kita buat dengan beberapa tag sebagai berikut.<p>
+<ul>
+    <li>"b" - <b>Membuat Teks menjadi bold</b></li>
+    <li>"strong" - <strong>Hampir sama seperti bold</strong></li>
+    <li>"i" - <i>Membuat teks menjadi italic atau miring</i></li>
+    <li>"em" - <em>Miring dan Bold</em></li>
+    <li>"mark" - <mark>Menambahkan highlight pada teks</mark></li>
+    <li>"small" - <small>Menjadikan teks kecil</small></li>
+</ul>
+<br><br>
+
+
+<h3>Media</h3>
+Dalam HTML kita dapat menambahkan beberapa jenis media yaitu: <br><br>
+<ul>
+<li><h5> Images </h5></li>
+<p>Kita bisa menambahkan image pada web page HTML kita dengan dua langkah, menambahkan tag lalu mencantumkan src untuk mencari sumber gambar. Lalu kita juga bisa menambahkan attribut tambahan seperti alt untuk alternative text dan mengatur width serta height nya. </p>
+
+<li><h5> Video </h5></li>
+<p>Dengan menambahkan video pada web page HTML kita dengan dua langkah, menambahkan tag lalu mencantumkan src untuk mencari sumber video format mp4. Lalu disini kita bisa menambahkan atribut seperti "autoplay" untuk memutar video secara otomatis dan "mute"
+untuk membisukan video kecuali user mematikan mute nya. Berbeda dari images, untuk video kita memisahkan media tag dengan source tag seperti ini; </p>
+
+<blockquote>
+    video width="320" height="240" controls>
+    source src="movie.mp4" type="video/mp4"
+    source src="movie.ogg" type="video/ogg"
+    /video
+</blockquote>
+
+<br><br>
+
+<li><h5> Audio </h5></li>
+<p>Sama seperti video , kita dapat membuat audio dengan menambahkan tag audio lalu tag source secara terpisah. Di audio (juga di video) kita bisa menambahkan attribut control. Untuk audio ini mensupport berbagai jenis file audio.
+Misalnya wav, mp3, aac, ogg dan lain lain.</p>
+</ul>
+<br><br>
+
+<h2>CSS</h2>
+<hr><br>
+CSS atau Cascading style sheet adalah sebuah bahasa scripting yang digunakan secara khusus untuk styling elemen pada HTML. Dalam CSS ada selector, yang merupakan elemen yang akan kita styling misalnya h1 adalah selector untuk heading, lalu ada properti dan value, properti adalah jenis stylingnya sedangkan value adalah nilai dari properti.
+Basic Styling. disini saya akan membahas 4 Styling pada CSS. <br><br>
+<ul>
+    <li><h5>Color dan Background Color</h5></li> 
+    <p>Dalam mengoding CSS kita dapat memberikan warna dengan dua value, yaitu value dalam HEX, RGB , HSL, RGBA, HSLA dan dengan nama bahasa inggris dari warna tersebut.
+    HEX misalnya #ff6347, dan warna misalnya "tomato" akan memberikan warna merah tomat. Lalu kita bisa merubah background color. Ini dapat kita terapkan ke elemen HTML seperti
+    section, box, atau div. </p>
+    <li><h5>CSS Text Color</h5></li> 
+    <p>Dalam CSS kita bisa memberikan warna tertentu pada teks. Pertama kita memberitahu tag elemen teks yang dituju. Lalu memberikan properti dan valuenya "color: green". Kita juga bisa memberikan semacam highlighter misalnya "background-color: yellow"</p>
+    <li><h5>CSS Text Formatting</h5></li> 
+    <p>Text Formatting merubah bentuk text menjadi misalnya mau diberi garis bawah atau dijadikan kapital, memberi garis dengan "text-decoration" dan menjadikan kapital dengan "text-transform".</p>
+    <li><h5>CSS Font dan Font Family</h5></li>
+    <p>Font Family adalah kelompok font atau typeface yang memiliki style language yang sama. Kita dapat mengganti font pada teks yang akan kita tuju.
+    misal untuk menentukan font family = "font-family: "Times New Roman", Times, serif;"
+    Adapun kalau anda ingin menggunakan satu font spesifik maka bisa menggunakannya seperti ini" font: 20px Arial, sans-serif;"</p>
+
+    <p>Dalam CSS kita dapat menggunakan Bootstrap, yang merupakan salah satu Framework dari CSS. Framework sendiri adalah kerangka kerja yang menyediakan struktur dasar dan komponen-komponen siap pakai untuk memudahkan dan mempercepat proses pengembangan aplikasi/website. </p>
+</ul>
+
+
+<h2>JS</h2>
+<hr><br>
+<p>JS atau JavaScript adalah jenis bahasa yang dapat mengubah content dari HTML. Ini membuat bahasa ini dapat mengembangkan fungsional dari HTML. 
+
+Sintaks JavaScript mendefinisikan dua jenis nilai:
+yaitu Nilai tetap disebut Literals(let) sedangkan nilai variabel disebut Variabel(var).
+
+Framework Bootstrap memiliki beberapa fungsi yang menggabungkan fungsionalitas CSS dan JavaScript untuk mempermudah membangun website. Walaupun JavaScript memiliki beberapa Framework misalnya React.js, Vue.js, Angular dan lain lain.</p>
+
+
+<h2 style="font-size: large;">Mengapa kita memerlukan HTML, CSS, dan JS</h2>
+<hr><br>
+
+W3School memberikan 3 Pillar dari Pemograman  : <br><br>
+<ol>
+   <li>HTML yang digunakan untuk membangun konten dalam web page</li><br>
+
+   <li>CSS kita gunakan untuk mengatur tata letak dari elemen-elemen pada website</li><br>
+
+   <li>JavaScript untuk mengendalikan tindakan dari web page.</li><br>
+</ol>
+
+Kita bisa membayangkannya begini: <br>
+
+Jika Pemograman Web adalah seorang manusia maka HTML adalah kerangka atau tulangnya, lalu CSS akan menjadi kulit, rambut yang membentuk penampilannya, dan JS akan mengatur perilaku dan sifatnya.
+
+Masing-masing memiliki fungsi yang penting dan esensial dalam pemograman web.
+<br><br>
+
+
+<h2 style="font-size: large;">Bagaimana cara mengimplementasikan <br>HTML, CSS dan JS</h2>
+<hr>
+
+<h4>HTML</h4>
+HTML dapat di buat struktur basic nya menggunakan DOCTYPE HTML, ada sebuah shortcut di vscode yang dimana jika anda mengetik tanda seru '!' lalu tekan tab maka akan jadi struktur head dan body. Oh Ya HTML terbentuk atas struktur head dan struktur body. Dua duanya harus ada. 
+Lalu sebelum head kita harus menyebutkan "meta charset yang biasanya UTF-8" lalu "meta name dan content", kemudian title atau judul website dan langkah opsional, anda bisa menyertakan css atau JS dengan memasukkan link tujuan pada link rel
+
+
+<h4>CSS</h4>
+CSS dapat di-inisialisasi dengan 3 cara diantaranya; <br><br>
+<ul>
+<li>
+    Inline CSS : adalah memasukkan styling langsung kedalam tag dengan menggunakan attribut styling.
+</li><br>
+
+<li>Internal CSS : adalah membuat blok kode (umumnya berada di bagian atas program) yang dikutip dalam tag style. Biasanya dalam menggunakan teknik ini diperlukan untuk menjadikan elemen-elemen menjadi sebuah class
+    yang nanti class ini kita tuju untuk mengatur styling pada blok style nya. Cara menununjuk suatu class misal (.classcontoh {attribut})
+</li><br>
+
+<li>External CSS : Ini adalah cara dimana kita menggunakan file external seperti style.css misalnya, untuk menjadi file rujukan untuk styling sebuah html. Sehingga file HTML lebih bisa difokuskan mengandung fungsi-fungsi HTML saja. 
+    Namun dengan catatan bahwa sama seperti internal CSS, untuk External, elemen yang mau diberikan styling harus diberi attribut class nya juga.  Dalam penggunaan external CSS, Anda harus memberikan link yang menghubungkan ke file CSS.
+</li> <br>
+</ul>
+
+<h4>JS</h4>
+untuk membuat Internal JS kita memasukkan blok code program js didalam tag script.
+
+        </div>
+        <div class="tags">
+            <p>tags:</p>
+            <a href="#">Web Programming</a>
+            <a href="#">Pemograman Web</a>
+            <a href="#">Institut Teknologi PLN</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="text">
+            <p>&copy; RIZAL WIRA PAMBUDI NIM 202331175</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>
